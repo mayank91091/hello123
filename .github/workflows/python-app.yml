@@ -28,10 +28,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-        env:
-         his: "bolo"
+        
 
       - name: Print Environment Variables
+      
         run: |
           echo "myvariable: $myvariable"
           echo "yourvariable: $yourvariable"
