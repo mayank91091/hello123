@@ -13,7 +13,7 @@ jobs:
   build:
     env:
       yourvariable: "how are you"
-      his: "bolo ?"
+      
     runs-on: ubuntu-latest
 
     steps:
@@ -28,6 +28,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+        env:
+         his: "bolo ?"
 
       - name: Print Environment Variables
         run: |
